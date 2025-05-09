@@ -1,18 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,viewport-fit=contain">
-    <title>Ad Player</title>
-  <script defer src="./index.js"></script>
-  <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Portfolio | Your Name</title>
+  <meta name="description" content="Portfolio of Your Name, a Kimberley-based visual artist specializing in mixed media artworks exploring South African cultural identity." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+    header { background: #222; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    nav { background: #444; padding: 0.5rem; text-align: center; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .gallery-item { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .gallery-item img { width: 100%; border-radius: 4px; }
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 3rem; }
+  </style>
 </head>
-<body style="background-color: #000000">
-<div id="app"></div>
-<noscript>
-    <strong>We're sorry but Ad Player doesn't work properly without JavaScript enabled. Please enable it to
-        continue.</strong>
-</noscript>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Visual Storyteller | Mixed Media Artist | Kimberley, SA</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#statement">Artist Statement</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about">
+    <h2>About the Artist</h2>
+    <p>This is a placeholder for your artist bio – a short professional background including training, experience, and exhibitions.</p>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="ubuntu-terra.jpg" alt="Ubuntu Terra - Mixed Media Portrait with SA Map Motif">
+        <h3>Ubuntu Terra</h3>
+        <p><a href="#contact">R8,000 – Inquire</a></p>
+      </div>
+      <div class="gallery-item">
+        <img src="land-of-the-dead.jpg" alt="Land of the Dead - Charcoal on Paper">
+        <h3>Land of the Dead</h3>
+        <p><a href="#contact">R7,000 – Inquire</a></p>
+      </div>
+      <div class="gallery-item">
+        <img src="joyful-procession.jpg" alt="Joyful Procession - Acrylic and Pastel">
+        <h3>Joyful Procession</h3>
+        <p><a href="#contact">R5,500 – Inquire</a></p>
+      </div>
+      <div class="gallery-item">
+        <img src="contrasts-of-time.jpg" alt="Contrasts of Time - Mixed Media">
+        <h3>Contrasts of Time</h3>
+        <p><a href="#contact">R4,500 – Inquire</a></p>
+      </div>
+      <div class="gallery-item">
+        <img src="preparing-the-fire.jpg" alt="Preparing the Fire - Pastel and Acrylic">
+        <h3>Preparing the Fire</h3>
+        <p><a href="#contact">R4,000 – Inquire</a></p>
+      </div>
+      <div class="gallery-item">
+        <img src="dude.jpg" alt="Dude - Soft Pastel">
+        <h3>Dude</h3>
+        <p><a href="#contact">R3,500 – Inquire</a></p>
+      </div>
+    </div>
+  </section>
+  <section id="statement">
+    <h2>Artist Statement</h2>
+    <p>
+      My work explores the layered histories and spiritual legacies embedded in South African soil. Drawing from personal memory,
+      cultural identity, and collective ancestry, I reimagine symbols, figures, and artifacts in order to challenge colonial narratives
+      and honor living traditions. Through mixed media, I weave together the tactile and the ephemeral – pigment, charcoal, pastel –
+      with stories that evoke both resistance and resilience. Each artwork is a bridge between time periods, generations, and the
+      ongoing dialogue between past and present.
+    </p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@gmail.com</p>
+    <p>Phone: 065 627 8794</p>
+    <p>Instagram: @yourartprofile</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
